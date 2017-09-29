@@ -1,13 +1,15 @@
 {
   "pages":[
+    
+    "pages/sixth/sixth",
+    "pages/my-music/my-music",
     "pages/fifth/fifth",
     "pages/forth/forth",
     "pages/third/third",
     "pages/first/first",
     "pages/second/second",
-    
     "pages/user/user",
-    "pages/my-music/my-music",
+    
     "pages/index/index",
     "pages/logs/logs"
   ],

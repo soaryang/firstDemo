@@ -1,0 +1,39 @@
+<view class="container">
+	<view class="imageContent">
+	    <view class="imageView">
+	        <view class="imageViewList" wx:for="{{imageObjectList}}" wx:for-item="items" wx:for-index="idx" >
+                <view wx:if="{{idx==show}}" class="dialogView speech-bubble speech-bubble-left">
+                    我是被显示被隐藏控件控件被隐藏控件控
+                </view>
+                <image class="imageCss" src="{{items.url}}"/>
+            </view>
+	    </view>
+	</view>
+	<view class="imageView2">
+		<view>
+			<image class="imageCss2" src="{{personalObject.url}}"/>
+		</view>
+	</view>
+
+    <view class="titleContent">
+	    <view class="titleView">
+	        <view class="imageViewList" wx:for="{{titleList}}" wx:for-item="item" wx:for-index="idx" >
+                <image class="titleImage" src="{{item.coverImgUrl}}"/>
+            </view>
+	    </view>
+	</view>
+
+
+	<view class="play-bar">
+        <text class="play-bar-text">{{playBar.name}}</text>
+    </view>
+     <view class="music-list-container">
+            <view class="big-photo-list">
+                <view class="big-photo-item"  wx:for="{{songsList}}" bindtap="play" data-num="{{index}}">
+                    <image class="photo" src="{{item.coverImgUrl}}"></image>
+                    <text class="music-name">{{item.name}}</text>
+                    <text class="music-author">{{item.singer}}</text>
+                </view>
+            </view>
+     </view>
+</view>
