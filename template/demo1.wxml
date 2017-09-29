@@ -1,0 +1,10 @@
+<template name="postItemTpl">
+    <view>
+      checkbox:eddddddd
+      <checkbox checked="{{false}}"> </checkbox>
+    </view>
+</template>
+
+<template name="objectCombine" data="{{message}}">
+  xxxxxxxxxxxxxxxxx:{{for}}
+</template>

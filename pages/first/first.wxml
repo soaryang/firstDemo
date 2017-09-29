@@ -1,0 +1,11 @@
+
+<view class="container">
+  <view>
+    <ul class="imageList">
+      <li class="imageListLi" wx:for="{{numberArray}}" wx:for-index="idx" wx:for-item="items" style="{{items.style}}">
+        <image wx:if="{{idx==9}}" src="{{items.url}}" class='userPic_300'/>
+        <image wx:if="{{idx!=9}}" src="{{items.url}}" class='{{items.picClass}}'/>
+      </li>
+    </ul>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/fifth/fifth",
+    "pages/forth/forth",
+    "pages/third/third",
+    "pages/first/first",
+    "pages/second/second",
+    
+    "pages/user/user",
+    "pages/my-music/my-music",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "我的Demo",
+    "navigationBarTextStyle":"black"
+  },
+    "tabBar": {
+      "color": "#929292",
+      "selectedColor": "#ff2d55",
+      "borderStyle": "white",
+      "backgroundColor": "#ffffff",
+      "list": [
+        {
+          "pagePath": "pages/my-music/my-music",
+          "iconPath": "image/tabbar/1.png",
+          "selectedIconPath": "image/tabbar/1-hl.png",
+          "text": "我的音乐"
+        },
+        {
+          "pagePath": "pages/search/search",
+          "iconPath": "image/tabbar/5.png",
+          "selectedIconPath": "image/tabbar/5-hl.png",
+          "text": "搜索"
+        }
+      ]
+    }
+}

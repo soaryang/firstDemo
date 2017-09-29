@@ -1,0 +1,8 @@
+<view class="container">
+	<view class="imageView">
+		<image wx:for="{{imageObjectList}}" wx:for-item="items"  class="imageCss" src="{{items.url}}"/>
+	</view>
+	<view class="imageView2" style="position: absolute;">
+		<image class="imageCss2" src="{{personalObject.url}}"/>
+	</view>
+</view>

@@ -1,0 +1,26 @@
+
+.imageList{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+.imageListLi{
+width: 100rpx;
+  height: 100rpx;
+}
+
+.userPic {
+  width: 100rpx;
+  height: 100rpx;
+
+}
+
+.userPic_300 {
+  position: absolute;
+  width: 300rpx;
+  height: 300rpx;
+  /*border-radius: 50%;*/
+}
+
+

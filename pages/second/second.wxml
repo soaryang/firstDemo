@@ -1,0 +1,15 @@
+<view class="container">
+  <div id="nav">
+    <ul>
+      <li><img src="images/2.png"/></li>
+      <li><img src="images/3.png"/></li>
+      <li><img src="images/4.png"/></li>
+      <li><img src="images/5.png"/></li>
+      <li><img src="images/7.png"/></li>
+      <li><img src="images/4.png"/></li>
+      <li><img src="images/5.png"/></li>
+      <li><img src="images/7.png"/></li>
+      <li><img src="images/7.png"/></li>
+    </ul>
+  </div>
+</view>
