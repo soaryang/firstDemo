@@ -15,25 +15,53 @@
 		</view>
 	</view>
 
-    <view class="titleContent">
+	<view class="titleContent">
 	    <view class="titleView">
 	        <view class="imageViewList" wx:for="{{titleList}}" wx:for-item="item" wx:for-index="idx" >
-                <image class="titleImage" src="{{item.coverImgUrl}}"/>
+            <image wx:if="{{idx!=3}}" class="titleImage" src="{{item.coverImgUrl}}"/>
+            <view class="titleViewUser" wx:if="{{idx==3}}">
+              <image  class="titleImageUser" src="{{item.coverImgUrl}}"/>
+            </view>
             </view>
 	    </view>
 	</view>
 
+	<view class="filmContent">
+		<view class="titleView">
+			<text class="tileText">{{playBar.name}}</text>
+		</view>
+	</view>
 
-	<view class="play-bar">
-        <text class="play-bar-text">{{playBar.name}}</text>
-    </view>
-     <view class="music-list-container">
-            <view class="big-photo-list">
-                <view class="big-photo-item"  wx:for="{{songsList}}" bindtap="play" data-num="{{index}}">
-                    <image class="photo" src="{{item.coverImgUrl}}"></image>
-                    <text class="music-name">{{item.name}}</text>
-                    <text class="music-author">{{item.singer}}</text>
-                </view>
-            </view>
-     </view>
+  <!--
+	<view class="film-list-container">
+		<view class="film-photo-list">
+      <view class='filmpreView'>
+          <image class="filmpreImage" src="../../image/pre.gif"></image>
+      </view>
+			<view class="big-photo-item"  wx:for="{{songsList}}" bindtap="play" data-num="{{index}}">
+				<image class="photo" src="{{item.coverImgUrl}}"></image>
+				<text class="music-name">{{item.name}}</text>
+				<text class="music-author">{{item.singer}}</text>
+			</view>
+      <view class='filmpreView'>
+          <image class="filmpreImage" src="../../image/next.gif"></image>
+      </view>
+		</view>
+
+  </view>
+  -->
+  
+  <view style="display:flex;flex-direction:column;width:94%;height:100%; padding-left:10px;margin-right:10px;">
+    <scroll-view scroll-x="true" style="white-space:nowrap; display: block;">
+        <view class="big-photo-item"  wx:for="{{songsList}}" bindtap="play" data-num="{{index}}" style='width: 100px; display: inline-block'>
+          <image style='width:100%;height:150rpx;' src="{{item.coverImgUrl}}"></image>
+        </view>
+        <!--
+        <view style="background: red; width: 200px; height: 100px; display: inline-block" ></view>
+        <view style="background: green; width: 200px; height: 100px; display: inline-block"></view>
+        <view style="background: blue; width: 200px; height: 100px; display: inline-block"></view>
+        <view style="background: yellow; width: 200px; height: 100px; display: inline-block"></view>
+        -->
+    </scroll-view>
+  </view>
 </view>

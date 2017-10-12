@@ -11,9 +11,6 @@ var _titleList = [
         name:"弹幕",
         coverImgUrl: "http://wx.qlogo.cn/mmopen/LOq6oSrvk2Bib4BfoicnnLjm4EcKefiaxtcJssUnv4H0JH2kmlWrHmMnhOQ9GrRFNAJAYXItjgib3KzBDPuWq9nCtibmNbibDyeK5P/0"
     },{
-        name:"弹幕",
-        coverImgUrl: "http://wx.qlogo.cn/mmopen/LOq6oSrvk2Bib4BfoicnnLjm4EcKefiaxtcJssUnv4H0JH2kmlWrHmMnhOQ9GrRFNAJAYXItjgib3KzBDPuWq9nCtibmNbibDyeK5P/0"
-    },{
         name:"我",
         coverImgUrl: "http://wx.qlogo.cn/mmopen/LOq6oSrvk2Bib4BfoicnnLjm4EcKefiaxtcJssUnv4H0JH2kmlWrHmMnhOQ9GrRFNAJAYXItjgib3KzBDPuWq9nCtibmNbibDyeK5P/0"
     }
@@ -42,6 +39,12 @@ var _songsList=[{
     mid: "001Qu4I30eVFYb",
     singer:'薛之谦',
     coverImgUrl: 'http://y.gtimg.cn/music/photo_new/T002R90x90M000003y8dsH2wBHlo.jpg'
+}, {
+  dataUrl: 'http://stream.qqmusic.tc.qq.com/132636799.mp3',
+  name: '演员',
+  mid: "001Qu4I30eVFYb",
+  singer: '薛之谦',
+  coverImgUrl: 'http://y.gtimg.cn/music/photo_new/T002R90x90M000003y8dsH2wBHlo.jpg'
 }]
 Page({
     data:{
@@ -50,10 +53,7 @@ Page({
         personalObject:{url:"http://wx.qlogo.cn/mmopen/u5mfvia7QCw5YnD2pMIHeu7OxudpiaWJaNADcj489qBf3e9IWMiaQrNx2iaB3cdaUyaoakSNQI5jbVkibvE7TgyNCE0uQ2PtsJXDc/0"},
         show:13,
         playBar:{
-            dataUrl:'http://stream.qqmusic.tc.qq.com/137192078.mp3',
-            name: '看过的电影',
-            singer:'周杰伦',
-            coverImgUrl: 'http://y.gtimg.cn/music/photo_new/T002R90x90M000003RMaRI1iFoYd.jpg'
+            name: '看过的电影'
         },
         songsList:_songsList,
         titleList:_titleList
@@ -84,11 +84,6 @@ Page({
         }
         this.setData({
             imageObjectList: numberArray
-        })
-    },
-    navbarTap: function(e){
-        this.setData({
-            currentTab: e.currentTarget.dataset.idx
         })
     }
 

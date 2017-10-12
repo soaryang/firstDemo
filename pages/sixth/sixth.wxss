@@ -58,6 +58,7 @@
   right: 100%;
   margin-top: -10px;
 }
+
 .imageView .imageViewList .imageCss{
     border:1px solid white;
     width: 140rpx;
@@ -81,10 +82,10 @@
 .titleContent{
     background-color: lightgray;
     width:100%;
-    padding-left: 25rpx;
 }
 
 .titleContent .titleView{
+    background-color: white;
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
@@ -93,35 +94,57 @@
 
 .titleContent .titleView .titleImage{
     border:1px solid white;
-    margin-right: 40rpx;
+    margin-left: 20rpx;
+    margin-right: 60rpx;
     width: 100rpx;
     height: 100rpx;
 }
 
+.titleContent .titleView .titleViewUser{
+    border-left: 1px solid lightgray;
+    padding-left: 50rpx;
+}
 
+.titleContent .titleView .titleViewUser .titleImageUser{
+    border:1px solid white;
+    width: 100rpx;
+    height: 100rpx;
+}
 
+.filmContent {
+    background-color: lightgray;
+    width:100%;
+    padding-left: 25rpx;
+}
 
-
-
-.play-bar{
+.filmContent .titleView {
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
-    width:95%;
-    background-color: lightcyan;
-    
-}
-.play-bar-image-container{
-    width:75rpx;
-    height:75rpx;
+    justify-content:flex-start;
 }
 
-.play-bar-image{
-    width:75rpx;
-    height:75rpx;
-    border-radius: 10rpx;
+.filmContent .titleView .tileText {
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+    font-size: 12px;
+    color:#929292;
+    line-height: 16px;
+} 
+.film-list-container {
 }
-.big-photo-list{
+
+.film-list-container .filmpreView{
+	padding-top:70rpx;
+}
+
+.film-list-container .filmpreView .filmpreImage{
+	width:20px;
+	height:20px;
+}
+
+
+.film-list-container .film-photo-list{
     width:100%;
     display:flex;
     flex-direction: row;
@@ -129,15 +152,18 @@
     justify-content: space-around;
 }
 
+
 .big-photo-item{
     display: flex;
     flex-direction: column;
     padding:5rpx 0rpx;
+    width:150rpx;
+    height:300rpx;
 }
 
 .photo{
-    width:150rpx;
-    height:150rpx;
+    width:100%;
+    height:'expression(this.height > 100 ? "100px" : this.height)';
     border-radius: 10rpx;
     background: #aaaaaa;
 }
