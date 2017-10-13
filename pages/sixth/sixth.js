@@ -3,16 +3,19 @@ const app = getApp();
 var _titleList = [
     {
         name:"文章",
-        coverImgUrl: "http://wx.qlogo.cn/mmopen/LOq6oSrvk2Bib4BfoicnnLjm4EcKefiaxtcJssUnv4H0JH2kmlWrHmMnhOQ9GrRFNAJAYXItjgib3KzBDPuWq9nCtibmNbibDyeK5P/0"
+        coverImgUrl: "../../image/article.gif"
     },{
         name:"电影",
-        coverImgUrl: "http://wx.qlogo.cn/mmopen/LOq6oSrvk2Bib4BfoicnnLjm4EcKefiaxtcJssUnv4H0JH2kmlWrHmMnhOQ9GrRFNAJAYXItjgib3KzBDPuWq9nCtibmNbibDyeK5P/0"
+        coverImgUrl: "../../image/film.gif"
     },{
         name:"弹幕",
-        coverImgUrl: "http://wx.qlogo.cn/mmopen/LOq6oSrvk2Bib4BfoicnnLjm4EcKefiaxtcJssUnv4H0JH2kmlWrHmMnhOQ9GrRFNAJAYXItjgib3KzBDPuWq9nCtibmNbibDyeK5P/0"
+        coverImgUrl: "../../image/danmu.png"
+    }, {
+      name: "游戏",
+      coverImgUrl: "../../image/game.gif"
     },{
         name:"我",
-        coverImgUrl: "http://wx.qlogo.cn/mmopen/LOq6oSrvk2Bib4BfoicnnLjm4EcKefiaxtcJssUnv4H0JH2kmlWrHmMnhOQ9GrRFNAJAYXItjgib3KzBDPuWq9nCtibmNbibDyeK5P/0"
+        coverImgUrl: "../../image/my.gif"
     }
 ]
 var _songsList=[{
@@ -46,17 +49,34 @@ var _songsList=[{
   singer: '薛之谦',
   coverImgUrl: 'http://y.gtimg.cn/music/photo_new/T002R90x90M000003y8dsH2wBHlo.jpg'
 }]
+var _gameList=[{
+    dataUrl:'http://stream.qqmusic.tc.qq.com/137192078.mp3',
+    name: '告白气球',
+    mid: "003OUlho2HcRHC",
+    singer:'周杰伦',
+    coverImgUrl: 'http://y.gtimg.cn/music/photo_new/T002R90x90M000003RMaRI1iFoYd.jpg'
+},{
+    dataUrl:'http://stream.qqmusic.tc.qq.com/138549169.mp3',
+    name: '你还要我怎样',
+    mid: "000E62Tc3bMiJB",
+    singer:'薛之谦',
+    coverImgUrl: 'http://y.gtimg.cn/music/photo_new/T002R90x90M000000aWdOx24i3dG.jpg'
+}]
 Page({
     data:{
         content:"222",
         imageObjectList:[],
         personalObject:{url:"http://wx.qlogo.cn/mmopen/u5mfvia7QCw5YnD2pMIHeu7OxudpiaWJaNADcj489qBf3e9IWMiaQrNx2iaB3cdaUyaoakSNQI5jbVkibvE7TgyNCE0uQ2PtsJXDc/0"},
         show:13,
-        playBar:{
+        filmObject:{
             name: '看过的电影'
+        }, 
+        gameObject: {
+          name: '游戏'
         },
         songsList:_songsList,
-        titleList:_titleList
+        titleList:_titleList,
+		gameList:_gameList
     },
     onLoad: function () {
         var numberArray = [];
