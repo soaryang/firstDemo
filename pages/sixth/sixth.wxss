@@ -2,7 +2,7 @@
 .imageContent{
    /*padding-bottom: 10px;
    background-color: lightgray;*/
-   padding-bottom: 10px;
+   padding-bottom: 12rpx;
    border-bottom: 10rpx solid lightgray;
 }
 
@@ -70,12 +70,12 @@
 
 .imageView2{
     position: absolute;
-    margin-top:60px;
+    margin-top:110rpx;
     z-index: 2000;
 }
 
 .imageView2 .imageCss2{
-    border:2px solid white;
+    border:2px solid gold;
     width: 200rpx;
     height: 200rpx;
     border-radius: 50%;
@@ -83,41 +83,206 @@
 
 
 .titleContent{
-    background-color: lightgray;
     width:100%;
     border-bottom: 10rpx solid lightgray;
+    display:flex;
+    flex-direction:row;
 }
 
 .titleContent .titleView{
     background-color: white;
+    width: 80%;
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
     justify-content:center;
 }
 
+.titleContent .titleView .titleOtherViewList{
+    
+}
+
+
+.titleContent .titleView .titleOtherViewList .titleOtherViewLeft{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50rpx;
+}
+
+
+.titleContent .titleView .titleOtherViewList .titleOtherView{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50rpx;
+    margin-right: 50rpx;
+}
+
+.titleContent .titleView .titleOtherViewList .titleOtherViewRight{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50rpx;
+}
+
+
 .titleContent .titleView .titleImage{
+    margin-top: 20rpx;
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.titleContent .titleView .titleName{
+    font-size: 9pt;
+    margin-top: 5rpx;
+    margin-bottom: 20rpx;
+} 
+
+
+.titleContent .titleUserView {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center; 
+    border-left:1rpx solid lightgray;
+}
+
+.titleContent .titleUserView .titleUserViewContent{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.titleContent .titleUserView .titleImage{
+    margin-top: 20rpx;
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.titleContent .titleUserView .titleName{
+    font-size: 9pt;
+    margin-top: 5rpx;
+    margin-bottom: 20rpx;
+}
+
+
+/*.titleContent .titleView .imageViewList{
+
+}
+
+.titleContent .titleView .imageViewList .titleOtherView{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleContent .titleView .imageViewList .titleOtherView .titleImage{
     border:1px solid white;
-    margin-top: 10rpx;
-    margin-left: 20rpx;
+    margin-top: 20rpx;
+    margin-left: 30rpx;
     margin-right: 40rpx;
-    width: 80rpx;
-    height: 80rpx;
+    width: 50rpx;
+    height: 50rpx;
 }
 
-.titleContent .titleView .titleViewUser{
+.titleContent .titleView .imageViewList .titleOtherView .titleName{
+    font-size: 9pt;
+    margin-top: 5rpx;
+    margin-bottom: 20rpx;
+} 
+
+
+
+
+.titleContent .titleView .imageViewList .titleViewUser{
     border-left: 3px solid lightgray;
-    padding-left: 50rpx;
-    padding-top: 10rpx;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.titleContent .titleView .titleViewUser .titleImageUser{
+.titleContent .titleView .imageViewList .titleViewUser .titleImageUser{
     border:1px solid white;
-    width: 80rpx;
-    height: 80rpx;
-}
+    width: 60rpx;
+    height: 60rpx;
+}*/
 
 .filmContent {
+    margin-top: 20rpx;
+    
+    width:100%;
+}
+
+.filmContent .filmTitleview {
+   margin-left:20rpx; 
+   margin-bottom: 20rpx;
+}
+
+.filmContent .filmTitleview .tileText{
+    font-size: 12pt;
+}
+
+.filmContent .filmListView {
+    display:flex;flex-direction:column;width:94%;height:100%; padding-left:10px;margin-right:10px;
+}
+
+.filmContent .filmListView .scrollView {
+    white-space:nowrap; 
+    display: block;
+}
+
+.filmContent .filmListView .scrollView .filePictureView{
+    display: inline-block;
+    margin-right: 25rpx;
+}
+
+
+.gameContent {
+    margin-top: 20rpx;
+    width:100%;
+    border-bottom: 10rpx solid lightgray;
+}
+
+.gameContent .gameTitleview {
+   margin-left:20rpx; 
+   margin-bottom: 20rpx;
+}
+
+.gameContent .gameTitleview .tileText{
+    font-size: 12pt;
+}
+
+.gameContent .gameListView {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gameContent .gameListView  .big-photo-item{
+    text-align: center;
+    width:280rpx;
+    display: flex;
+    flex-direction: column;
+    padding:5rpx 0rpx;
+}
+
+.gameContent .gameListView  .big-photo-item .photo{
+    width:100%;
+    height: 140rpx;
+    border-radius: 10rpx;
+    background: #aaaaaa;
+}
+
+.gameContent .gameListView  .big-photo-item .gameName{
+    margin-top: 10rpx;
+    font-size: 9pt;
+}
+
+/*.filmContent {
     width:100%;
     padding-left: 25rpx;
     
@@ -187,4 +352,4 @@
     display: flex;
     flex-direction: column;
     padding:5rpx 0rpx;
-}
+}*/

@@ -13,10 +13,10 @@ var _titleList = [
     }, {
       name: "游戏",
       coverImgUrl: "../../image/game.gif"
-    },{
+    }/*,{
         name:"我",
         coverImgUrl: "../../image/my.gif"
-    }
+    }*/
 ]
 var _songsList=[{
     dataUrl:'http://stream.qqmusic.tc.qq.com/137192078.mp3',

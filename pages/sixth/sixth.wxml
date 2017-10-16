@@ -13,37 +13,74 @@
 		<view>
 			<image class="imageCss2" src="{{personalObject.url}}"/>
 		</view>
-	</view>
-  <hr/>
-
-  
-	<view class="titleContent">
-	    <view class="titleView">
-	        <view class="imageViewList" wx:for="{{titleList}}" wx:for-item="item" wx:for-index="idx" >
-              <image wx:if="{{idx!=4}}"  class="titleImage" src="{{item.coverImgUrl}}"/>
-              <view class="titleViewUser" wx:if="{{idx==4}}">
-                  <image  class="titleImageUser" src="{{item.coverImgUrl}}"/>
-            </view>
-          </view>  
-	    </view>
-	</view>
+	</view>  
 	
-  <view class="filmContent">
-		<view class="titleView">
+  
+  <view class="titleContent">
+	    <view class="titleView">
+          <view class="titleOtherViewList" wx:for="{{titleList}}" wx:for-item="item" wx:for-index="idx" >
+              
+              <view class="titleOtherViewLeft" wx:if="{{idx==0}}">
+                  <image class="titleImage" src="{{item.coverImgUrl}}"/>
+                  <text  class="titleName">{{item.name}}</text>
+              </view>
+
+              <view class="titleOtherView" wx:if="{{idx!=0 && idx!=3}}">
+                  <image class="titleImage" src="{{item.coverImgUrl}}"/>
+                  <text  class="titleName">{{item.name}}</text>
+              </view>
+
+              <view class="titleOtherViewRight" wx:if="{{idx==3}}">
+                  <image class="titleImage" src="{{item.coverImgUrl}}"/>
+                  <text  class="titleName">{{item.name}}</text>
+              </view>
+          </view> 
+	    </view>
+      <view class='titleUserView'>
+          <view class="titleUserViewContent">
+              <image class="titleImage" src="../../image/my.gif"/>
+              <text  class="titleName">我</text>
+          </view>
+      </view>
+	</view>
+
+
+  <view class='gameContent'>
+      <view class="gameTitleview">
+          <text class="tileText">{{gameObject.name}}</text>
+      </view>
+      <view class="gameListView">
+            <view  class="big-photo-item"  wx:for="{{gameList}}" bindtap="play" data-num="{{index}}">
+                <image class="photo" src="{{item.coverImgUrl}}"></image>
+                <text class="gameName">{{item.name}}</text>
+            </view>
+        </view>
+  </view>
+  <view class='filmContent'>
+    <view class="filmTitleview">
 			<text class="tileText">{{filmObject.name}}</text>
 		</view>
-	</view>
-
-  <view style='border-bottom: 10rpx solid lightgray;width:100%;'>
-    <view style="display:flex;flex-direction:column;width:94%;height:100%; padding-left:10px;margin-right:10px;">
-      <scroll-view scroll-x="true" style="white-space:nowrap; display: block;">
-          <view class="big-photo-item"  wx:for="{{songsList}}" bindtap="play" data-num="{{index}}" style='width: 100px; display: inline-block'>
-            <image style='width:100%;height:150rpx;' src="{{item.coverImgUrl}}"></image>
+    <view class='filmListView'>
+      <scroll-view scroll-x="true" class='scrollView'>
+          <view class="filePictureView"  wx:for="{{songsList}}" bindtap="play" data-num="{{index}}">
+            <image style='width:140rpx;height:140rpx;' src="{{item.coverImgUrl}}"></image>
           </view>
       </scroll-view>
     </view>
   </view>
 
+
+
+	<!--
+  <view class="filmContent">
+		<view class="titleView">
+			<text class="tileText">{{filmObject.name}}</text>
+		</view>
+	</view>
+ 
+
+   -->
+  <!--
   <view class="filmContent">
 		<view class="titleView">
 			<text class="tileText">{{gameObject.name}}</text>
@@ -59,5 +96,6 @@
         </view>
     </view>
 
+-->
 
 </view>
