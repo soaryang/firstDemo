@@ -15,7 +15,6 @@
 		</view>
 	</view>  
 	
-  
   <view class="titleContent">
 	    <view class="titleView">
           <view class="titleOtherViewList" wx:for="{{titleList}}" wx:for-item="item" wx:for-index="idx" >
@@ -56,46 +55,18 @@
             </view>
         </view>
   </view>
+
   <view class='filmContent'>
     <view class="filmTitleview">
 			<text class="tileText">{{filmObject.name}}</text>
 		</view>
     <view class='filmListView'>
-      <scroll-view scroll-x="true" class='scrollView'>
-          <view class="filePictureView"  wx:for="{{songsList}}" bindtap="play" data-num="{{index}}">
-            <image style='width:140rpx;height:140rpx;' src="{{item.coverImgUrl}}"></image>
+      <scroll-view scroll-x="true" class='scrollView' scroll-with-animation="true">
+          <view class="filmPictureView"  wx:for="{{songsList}}" bindtap="play" data-num="{{index}}">
+            <image class="filmPicture" src="{{item.coverImgUrl}}"></image>
           </view>
       </scroll-view>
     </view>
   </view>
-
-
-
-	<!--
-  <view class="filmContent">
-		<view class="titleView">
-			<text class="tileText">{{filmObject.name}}</text>
-		</view>
-	</view>
- 
-
-   -->
-  <!--
-  <view class="filmContent">
-		<view class="titleView">
-			<text class="tileText">{{gameObject.name}}</text>
-		</view>
-	</view> 
-  <view class="music-list-container">
-        <view class="big-photo-list">
-            <view  class="big-photo-item"  wx:for="{{gameList}}" bindtap="play" data-num="{{index}}">
-                <image class="photo" src="{{item.coverImgUrl}}"></image>
-                <text class="music-name">{{item.name}}</text>
-                <text class="music-author">{{item.singer}}</text>
-            </view>
-        </view>
-    </view>
-
--->
 
 </view>
